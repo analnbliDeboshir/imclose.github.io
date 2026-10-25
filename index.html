@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111017"><meta name="description" content="Тихое место для Вероники, сделанное Димой.">
+<title>Для Вероники — от Димы ♡</title>
+<style>
+:root{--bg:#111017;--panel:#201c29;--txt:#f4edf6;--muted:#b9afc4;--pink:#e5a1c1;--blue:#a9c4ee;--line:#ffffff18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 10% 5%,#34223c,transparent 38%),radial-gradient(ellipse at 90% 55%,#1d2a3d,transparent 38%),var(--bg);color:var(--txt);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible{outline:2px solid var(--pink);outline-offset:3px}
+main{width:min(740px,100%);margin:auto;padding:20px 15px calc(44px + env(safe-area-inset-bottom))}
+nav{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 2px 18px}
+.pill{border:1px solid var(--line);border-radius:99px;padding:6px 10px;letter-spacing:0;text-transform:none}
+.hero{min-height:77svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px 7px 45px}
+.moon{width:70px;height:70px;display:grid;place-items:center;border-radius:50%;font-size:2rem;color:#211b2b;background:linear-gradient(135deg,#f2c6d9,#9e9dcf);box-shadow:0 0 55px #dba8d530;margin-bottom:22px}
+.eyebrow{color:var(--pink);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase}
+h1{font-size:clamp(2.65rem,10vw,4.6rem);line-height:1.03;letter-spacing:-.06em;margin:14px 0 18px}h1 span{color:var(--pink)}
+.lead{max-width:470px;color:#d4cbdc;margin:0 auto 22px}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+.btn{border:1px solid #e8b1d144;border-radius:15px;padding:12px 16px;background:linear-gradient(135deg,#e1a1bf,#aa82ad);color:#211723;font-weight:700}
+.btn.secondary,.btn.quiet{background:#ffffff09;color:var(--txt);border-color:var(--line)}
+.btn.quiet{color:#f0c5d9}.scrollhint{font-size:.78rem;color:#948aa1;margin-top:28px}
+section{margin:15px 0 19px;padding:21px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#ffffff0b,#ffffff04);box-shadow:0 18px 50px #0002}
+h2{font-size:1.34rem;line-height:1.3;margin:0 0 10px;letter-spacing:-.025em}p{margin:8px 0;color:#d8d0e0}.small{font-size:.84rem;color:var(--muted)}.hidden{display:none!important}
+.letter{font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;line-height:1.9;color:#f1e6f1}.letter strong{color:#f3b8d0}
+.note{border-left:2px solid #bd7fa8;padding:5px 0 5px 13px;margin:14px 0;color:#e9d9e5}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:14px}
+.tile{min-height:100px;text-align:left;border:1px solid var(--line);border-radius:16px;background:#ffffff08;padding:12px;line-height:1.4}
+.tile.selected,.tile:active{background:#d99cba18;border-color:#e3a4c455}.tile .emoji{display:block;font-size:1.4rem;margin-bottom:5px}.tile b{display:block;font-size:.92rem;margin-bottom:4px}.tile small{display:block;font-size:.78rem;color:var(--muted);line-height:1.45}
+.response{margin-top:13px;padding:14px;border:1px solid #dba0bf30;background:#dba0bf0d;border-radius:14px;color:#f1dce8;line-height:1.7}
+.minecraft{background:linear-gradient(#1d2732,#17211e)}.sky{height:108px;position:relative;overflow:hidden;border-radius:13px;margin:14px 0;background:linear-gradient(#27394c 0 65%,#3c5545 65%)}
+.sky:before{content:"";position:absolute;right:23px;top:17px;width:27px;height:27px;background:#e8dcc5;box-shadow:0 0 24px #e8dcc555}
+.sky:after{content:"";position:absolute;left:20px;top:24px;width:65px;height:12px;background:#b9c4cf;box-shadow:12px 10px 0 #b9c4cf,27px 0 #b9c4cf}
+.blocks{position:absolute;bottom:0;left:0;right:0;display:flex;align-items:end}.block{height:33px;flex:1;background:#476b48;border-top:8px solid #79976c;box-shadow:inset -4px 0 #0002}.block:nth-child(2n){height:45px;background:#514c42}.block:nth-child(3n){height:25px}
+.person{position:absolute;z-index:2;left:43%;bottom:31px;width:17px;height:31px;background:#d9b49c;box-shadow:0 -11px 0 1px #5c354d,0 12px 0 3px #334d70}
+.timeline{display:flex;gap:12px;margin:15px 0}.dot{width:9px;height:9px;min-width:9px;border-radius:50%;background:var(--pink);margin-top:9px;box-shadow:0 0 0 5px #e6a2c118}
+.iyv{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.iyv button{border:1px dashed #d6a2c14d;border-radius:99px;background:#ffffff08;padding:8px 11px;font-size:.82rem}
+footer{text-align:center;color:#91889e;font-size:.8rem;padding:28px 10px 5px}footer strong{color:#dba5c0;font-weight:600}
+@media(min-width:620px){main{padding-top:28px}.hero{min-height:620px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}section{padding:25px}}
+@media(max-width:370px){main{padding-left:11px;padding-right:11px}section{padding:17px}.tile{padding:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style></head>
+<body><main>
+<nav><span>маленькое тихое место</span><span class="pill">только для Вероники ♡</span></nav>
+<header class="hero"><div class="moon">✦</div><div class="eyebrow">от Димы · без повода</div>
+<h1>Вероники,<br><span>ты можешь</span><br>просто быть.</h1>
+<p class="lead">Здесь не надо улыбаться, собираться с силами, отвечать на сообщения или превращать день во что-то полезное. Можно просто побыть.</p>
+<div class="actions"><button class="btn" id="letterOpen">Прочитать от Димы ♡</button><button class="btn secondary" id="nothingBtn">Мне не хочется ничего</button></div>
+<div class="scrollhint">никаких заданий · никаких обязательств ↓</div></header>
+
+<section id="letter" class="hidden"><h2>Тебе. От меня.</h2>
+<p class="letter">Любимая моя Вероника.<br><br>Я не буду говорить, что всё прекрасно, что надо просто посмотреть на мир позитивнее или срочно придумать, чем заняться. Я знаю, как бесят слова, которые ничего не меняют.<br><br>Я просто хочу, чтобы ты знала: <strong>тебе не нужно заслуживать мою заботу хорошим настроением.</strong> Не нужно быть весёлой, общительной, продуктивной или удобной. Ты можешь молчать, злиться на весь мир, устать от людей и ничего не хотеть. Моё отношение к тебе от этого не меняется.<br><br>Мне нравится твоя честность, твоя прямота, твоя доброта и то, как серьёзно ты относишься к тому, что для тебя важно — даже если начинаешь всё в последний момент. Мне нравится твой ум, то, как ты готовишь, и твои невероятные бездонные голубые глаза. И да, ты чертовски красивая и сексуальная. Тут даже спорить не о чем.<br><br>Я не знаю всех ответов за тебя и не собираюсь решать твою жизнь вместо тебя. Но я знаю, что ты не обязана разбираться со всем в одиночку. Если захочешь — я рядом. Если захочешь тишины — я не обижусь. Если захочешь обниматься и уснуть — я только за.<br><br>И ещё: тебе не нужно стесняться того, что я хочу быть рядом. Ты не становишься мне в тягость оттого, что тебе плохо. Мне не нужно, чтобы ты немедленно стала счастливой в ответ на это письмо.<br><br><strong>Я люблю тебя, Вероники. Не только в хорошие дни. Особенно не только в хорошие дни.</strong><br><br>Твой Дима. ♡</p>
+<button class="btn quiet" id="hideLetter">Оставить письмо здесь, я ещё вернусь</button></section>
+
+<section><h2>Выбери не занятие, а то, чего хочется</h2><p>Можно нажать что-то одно. Можно ничего не выбирать. Это не тест и нет правильного ответа.</p>
+<div class="grid" id="moods">
+<button class="tile" data-mood="quiet"><span class="emoji">🌑</span><b>Тишины</b><small>Чтобы никто ничего не спрашивал.</small></button>
+<button class="tile" data-mood="rant"><span class="emoji">🗯️</span><b>Поругаться на мир</b><small>Без «зато» и «посмотри с другой стороны».</small></button>
+<button class="tile" data-mood="hug"><span class="emoji">🫂</span><b>Обнимашек</b><small>Никаких объяснений. Просто рядом.</small></button>
+<button class="tile" data-mood="sleep"><span class="emoji">🌙</span><b>Чтобы меня уложили спать</b><small>День может закончиться прямо сейчас.</small></button>
+<button class="tile" data-mood="silly"><span class="emoji">🦦</span><b>Немного глупостей</b><small>Без глубокого смысла. Просто отвлечься.</small></button>
+<button class="tile" data-mood="nothing"><span class="emoji">🪨</span><b>Вообще ничего</b><small>Даже выбирать уже утомительно.</small></button></div><div id="moodResponse" class="response hidden" aria-live="polite"></div></section>
+
+<section class="minecraft"><h2>Маленький мир, в котором никто не торопит ⛏️</h2>
+<p>Представь тихий уголок в Minecraft: ночь, трава, домик, и можно просто стоять и смотреть на небо. Никаких мобов, дедлайнов и людей, которые задают странные вопросы.</p>
+<div class="sky" aria-hidden="true"><div class="person"></div><div class="blocks"><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div></div></div>
+<p class="small">В этом мире можно не добывать ресурсы, не строить ферму и не быть эффективной. Можно просто быть маленьким пиксельным человечком, которому выдали плед.</p>
+<button class="btn secondary" id="minecraftBtn">Найти спокойствие в кустах</button><div id="minecraftResult" class="response hidden"></div></section>
+
+<section><h2>История с очень странным Иванычем</h2>
+<p>Четыре года мы существовали где-то в одном университетском пространстве. На одной специальности, но на разных формах обучения. Нас объединял один преподаватель — и целая коллекция его альтернативных личностей.</p>
+<div class="timeline"><span class="dot"></span><div><b>Четыре года пересекались</b><p>И каким-то образом не начали эту историю раньше. У вселенной, видимо, был свой план и очень плохой тайм-менеджмент.</p></div></div>
+<div class="timeline"><span class="dot"></span><div><b>Последний университетский год</b><p>Наконец познакомились по-настоящему. Иногда самые важные люди не появляются внезапно — они просто однажды становятся ближе.</p></div></div>
+<div class="timeline"><span class="dot"></span><div><b>А теперь — мы</b><p>Полгода вместе. И всего 7–8 километров между нами. В масштабе мира это вообще смешная дистанция. Особенно если учитывать, что мы четыре года умудрялись не разобраться.</p></div></div>
+<p class="small">Нажми на одного из Иванычей. Научной ценности у этого исследования нет.</p>
+<div class="iyv"><button data-iv="Карп Иваныч">Карп Иваныч</button><button data-iv="Кокон Иваныч">Кокон Иваныч</button><button data-iv="Суп Иваныч">Суп Иваныч</button><button data-iv="Лев Иваныч">Лев Иваныч</button><button data-iv="Слон Иваныч">Слон Иваныч</button></div><div id="ivanychResult" class="response hidden"></div></section>
+
+<section><h2>На случай, если ты забыла</h2>
+<div class="note">Ты умная. Не «когда-нибудь, если постараешься», а уже сейчас.</div>
+<div class="note">Ты умеешь быть ответственной, даже когда всё откладывается до последнего момента. Это странный, но вполне рабочий суперскилл.</div>
+<div class="note">Ты готовишь так, что это заслуживает отдельного государственного гранта.</div>
+<div class="note">Тебе не обязательно прямо сейчас знать, где ты будешь жить, чем заниматься и как всё сложится. Неопределённость — это не провал.</div>
+<div class="note">Твои голубые глаза — вообще-то нечестное преимущество перед остальным человечеством.</div>
+<div class="note">Ты можешь быть пессимисткой, уставшей, злой, молчаливой. Ты всё равно любимая.</div></section>
+
+<section><h2>Если захочется позвать меня</h2><p>Не нужно объяснять всё идеально или доказывать, что тебе достаточно плохо для поддержки. И не нужно соглашаться только потому, что я готов приехать.</p>
+<div class="grid">
+<button class="tile" data-contact="hug"><span class="emoji">🫂</span><b>Приезжай обнять</b><small>Если тебе самой этого хочется.</small></button>
+<button class="tile" data-contact="stay"><span class="emoji">☕</span><b>Просто побудь рядом</b><small>Без плана, разговоров и решений.</small></button>
+<button class="tile" data-contact="space"><span class="emoji">🌘</span><b>Мне нужно пространство</b><small>Я люблю тебя, но сейчас хочу побыть одна.</small></button>
+<button class="tile" data-contact="sleep"><span class="emoji">🛌</span><b>Уложи меня спать</b><small>Обнять, поцеловать и выключить мир.</small></button></div>
+<div id="contactResponse" class="response hidden"></div><p class="small">Эти кнопки никуда ничего не отправляют — они просто помогают подобрать слова, если на свои сейчас нет сил.</p></section>
+
+<section style="text-align:center"><div style="font-size:2rem">🌌</div><h2>И последнее, Вероники</h2>
+<p>Я не обещаю, что смогу исправить всё, что тебя расстраивает. Но я могу быть человеком, рядом с которым тебе не придётся притворяться, что всё нормально.</p>
+<p>Не нужно отвечать на эту страницу. Не нужно благодарить. Не нужно срочно становиться счастливее.</p>
+<p><strong style="color:#f0b7d0">Я здесь. Я на твоей стороне. Я люблю тебя.</strong></p>
+<button class="btn" id="hugBtn">Получить виртуальное объятие 🫂</button><div id="hugResult" class="response hidden">*Дима мысленно укутал тебя в плед, обнял крепко-крепко, поцеловал в макушку и отменил все дела на ближайшие десять минут.*<br><br>Можешь ничего не говорить. ♡</div></section>
+<footer>сделано не для того, чтобы тебя изменить,<br>а чтобы ты помнила, что <strong>тебе не нужно справляться со всем одной.</strong><br><br>твой Дима · ♡</footer>
+</main>
+<script>
+const $=id=>document.getElementById(id), show=(id,t)=>{const e=$(id);e.textContent=t;e.classList.remove('hidden')};
+$('letterOpen').onclick=()=>{$('letter').classList.remove('hidden');$('letter').scrollIntoView({behavior:'smooth',block:'start'})};
+$('hideLetter').onclick=()=>{$('letter').classList.add('hidden');$('letterOpen').scrollIntoView({behavior:'smooth',block:'center'})};
+const moods={
+quiet:'Понял. Никаких вопросов, никаких попыток вытащить тебя из тишины. Представь, что рядом просто сидит Дима и не требует разговора. Можно молчать сколько угодно.',
+rant:'Да. Иногда люди ведут себя так, будто специально проходят отбор на звание невыносимых. И особенно обидно, когда ты и так на последнем проценте батарейки. Сегодня не обязательно искать в этом позитивную сторону.',
+hug:'Мысленно обнимаю тебя крепко-крепко. Не отпускаю, пока не станет чуть уютнее. Никаких «ну не грусти» — просто обнимаю. А если захочешь настоящих объятий, можно сказать Диме одним словом.',
+sleep:'Официальное разрешение на горизонтальное положение выдано. Все мысли могут продолжать шуметь где-то вдалеке, а ты можешь закрыть глаза. Ничего не нужно доделывать именно в эту секунду.',
+silly:'Срочная новость: ам-ням получил должность главного по моральной поддержке. Его квалификация — круглые глаза и абсолютное отсутствие полезных советов. Стич одобрил назначение.',
+nothing:'Принято. Ничего — значит ничего. Не надо выбирать, отвечать, объяснять или превращать это состояние в проект по самоулучшению. Эта страница никуда не денется.'
+};
+document.querySelectorAll('[data-mood]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-mood]').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');show('moodResponse',moods[b.dataset.mood])});
+$('nothingBtn').onclick=()=>{show('moodResponse',moods.nothing);$('moodResponse').scrollIntoView({behavior:'smooth',block:'center'})};
+$('minecraftBtn').onclick=()=>{const a=['За кустом обнаружен редкий ресурс: отсутствие обязательств. Забирай, он бесконечный.','Ты нашла секретную пещеру. Внутри сундук, а в сундуке — плед, еда и табличка «сегодня можно не стараться».','Сервер объявил день без мобов, дедлайнов и необходимости поддерживать диалог. Можно просто смотреть на пиксельную луну.','Достижение разблокировано: «Провела время и ничего не оптимизировала». Награда — заслуженный покой.'];show('minecraftResult',a[Math.floor(Math.random()*a.length)])};
+const iv={'Карп Иваныч':'Карп Иваныч всплыл на поверхность университетской памяти. Он ничего не объяснил, но почему-то стало смешнее.','Кокон Иваныч':'Кокон Иваныч укутался в кокон и отказался взаимодействовать с внешним миром. Разумное решение, Кокон Иваныч.','Суп Иваныч':'Суп Иваныч постановил: сегодня не надо решать судьбу человечества. Максимум — выбрать, какой суп морально ближе.','Лев Иваныч':'Лев Иваныч издал величественный рык в сторону всех раздражающих людей. Затем лёг спать. Будь как Лев Иваныч.','Слон Иваныч':'Слон Иваныч деликатно прошёлся по всем проблемам, которые сегодня вели себя особенно нагло. После чего принёс чай.'};
+document.querySelectorAll('[data-iv]').forEach(b=>b.onclick=()=>show('ivanychResult',iv[b.dataset.iv]));
+const contacts={hug:'Можно отправить Диме просто: «Хочу, чтобы ты приехал и обнял меня». Не нужно оправдываться за просьбу.',stay:'Можно сказать: «Побудь со мной немного, но давай без советов и необходимости разговаривать».',space:'Можно сказать: «Я тебя люблю. Сейчас мне нужно побыть одной, это не потому, что ты сделал что-то не так».',sleep:'Можно сказать: «Приезжай, обними меня, поцелуй и помоги мне перестать думать хотя бы на вечер».'};
+document.querySelectorAll('[data-contact]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-contact]').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');show('contactResponse',contacts[b.dataset.contact])});
+$('hugBtn').onclick=()=>{$('hugResult').classList.remove('hidden');$('hugResult').scrollIntoView({behavior:'smooth',block:'center'})};
+</script></body></html>
